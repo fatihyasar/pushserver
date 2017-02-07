@@ -6,8 +6,7 @@
   "author": "Frédéric Barrau",
   "scripts": {
     "start": "node ./bin/pushserver",
-    "debug": "node-debug --debug-brk ./bin/pushserver",
-    "dev" :  "node --nolazy --debug-brk=5858 ./bin/pushserver"
+    "debug": "node-debug --debug-brk ./bin/pushserver"
   },
   "dependencies": {
     "apn": "^1.7.3",
