@@ -6,7 +6,6 @@
   "author": "Frédéric Barrau",
   "scripts": {
     "start": "node ./bin/pushserver",
-    /*"test": "NODE_ENV=test mocha test",*/
     "debug": "node-debug --debug-brk ./bin/pushserver",
     "dev" :  "node --nolazy --debug-brk=5858 ./bin/pushserver"
   },
