@@ -4,10 +4,12 @@
   "description": "Pushserver is a push management platform for both IOS and Android notifications. It manages several applications, proposes a REST API and a GUI for administration and testing purpose.",
   "private": false,
   "author": "Frédéric Barrau",
+
   "scripts": {
     "start": "node ./bin/pushserver",
     "debug": "node-debug --debug-brk ./bin/pushserver"
   },
+
   "dependencies": {
     "apn": "^1.7.3",
     "bluebird": "^2.9.30",
