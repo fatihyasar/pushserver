@@ -29,7 +29,7 @@
       }
     },
     "name": "Push Manager",
-    "port": 3002,
+    "port": 1339,
     "bindAddressAPI": ["0.0.0.0"],
     "bindAddressGUI": ["0.0.0.0"],
     "log" : {
