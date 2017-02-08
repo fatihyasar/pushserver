@@ -60,7 +60,19 @@ server.use(function(req, res, next) {
   next(err);
 });
 
-// error handlers 
+//CORS middleware
+var allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+    res.header('Access-Control-Allow-Headers', 'Content-Type');
+
+    next();
+}
+
+server.configure(function() {
+    app.use(allowCrossDomain);
+});
+
 
 // development error handler
 // will print stacktrace
