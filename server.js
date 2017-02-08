@@ -69,9 +69,8 @@ var allowCrossDomain = function(req, res, next) {
     next();
 }
 
-server.configure(function() {
-    app.use(allowCrossDomain);
-});
+server.use(allowCrossDomain);
+
 
 
 // development error handler
