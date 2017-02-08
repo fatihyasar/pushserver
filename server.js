@@ -14,6 +14,9 @@ var
   paginate = require('express-paginate'),
   server = express();
 
+var cors = require('cors');
+server.use(cors()); 
+
 Promise.promisifyAll(require('mongoose'));
 
 //loading plugins
@@ -59,17 +62,6 @@ server.use(function(req, res, next) {
   err.status = 404;
   next(err);
 });
-
-//CORS middleware
-var allowCrossDomain = function(req, res, next) {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-
-    next();
-}
-
-server.use(allowCrossDomain);
 
 
 
